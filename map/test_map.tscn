@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://btvyrwfil0sy6"]
+
+[ext_resource type="PackedScene" uid="uid://c8vmr7cu0gesm" path="res://models/test-map.glb" id="1_njmc6"]
+[ext_resource type="Texture2D" uid="uid://b8erwmkjnw3m" path="res://textures/grass.jpg" id="2_yse32"]
+[ext_resource type="Texture2D" uid="uid://bnpiavy76371" path="res://textures/wall.jpg" id="3_nfpm3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fopq8"]
+albedo_texture = ExtResource("2_yse32")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u25e7"]
+albedo_texture = ExtResource("3_nfpm3")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[node name="test-map" instance=ExtResource("1_njmc6")]
+
+[node name="ground" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.08916, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_fopq8")
+
+[node name="wall" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.08916, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_u25e7")
