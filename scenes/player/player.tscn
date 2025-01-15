@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp46t2ugcyb41"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_q047r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sb1xk"]
+size = Vector3(0.8, 1.8, 0.8)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gs6pq"]
+points = PackedVector3Array(0.4, 0.882931, 0.4, -0.4, -0.882932, -0.4, 0.4, -0.882931, -0.4, -0.4, 0.882932, -0.4, -0.4, -0.882931, 0.4, 0.4, 0.882931, -0.4, -0.4, 0.882931, 0.4, 0.4, -0.882931, 0.4)
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_q047r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+gi_mode = 2
+mesh = SubResource("BoxMesh_sb1xk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("ConvexPolygonShape3D_gs6pq")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45049, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+fov = 90.0

@@ -1,12 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://dro4t7ckgqb0g"]
+[gd_scene load_steps=11 format=3 uid="uid://dro4t7ckgqb0g"]
 
+[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_i65mk"]
 [ext_resource type="Shader" path="res://shader/psx_dither.gdshader" id="1_xqin5"]
 [ext_resource type="Shader" path="res://shader/psx_fade.gdshader" id="2_tsjj2"]
 [ext_resource type="PackedScene" uid="uid://bcyppxojr31wb" path="res://scenes/levels/test.tscn" id="3_t5fk6"]
+[ext_resource type="PackedScene" uid="uid://bp46t2ugcyb41" path="res://scenes/player/player.tscn" id="4_3bajd"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gyct1"]
 shader = ExtResource("1_xqin5")
-shader_parameter/color_depth = 4
+shader_parameter/color_depth = 3
 shader_parameter/dithering = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_clxld"]
@@ -25,11 +27,13 @@ background_mode = 2
 sky = SubResource("Sky_3i0em")
 ssr_enabled = true
 ssao_enabled = true
+ssao_radius = 3.33
 ssao_intensity = 5.42
 ssil_enabled = true
 sdfgi_enabled = true
 
 [node name="Game" type="Node"]
+script = ExtResource("1_i65mk")
 
 [node name="DitheringContainer" type="SubViewportContainer" parent="."]
 material = SubResource("ShaderMaterial_gyct1")
@@ -65,9 +69,7 @@ render_target_update_mode = 4
 
 [node name="Test" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport" instance=ExtResource("3_t5fk6")]
 
-[node name="Camera3D" type="Camera3D" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/Test"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.464965, 3.00428)
-current = true
+[node name="Player" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/Test" instance=ExtResource("4_3bajd")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport"]
 environment = SubResource("Environment_cvihh")
