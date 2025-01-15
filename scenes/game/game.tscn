@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://dro4t7ckgqb0g"]
+
+[ext_resource type="Shader" path="res://shader/psx_dither.gdshader" id="1_xqin5"]
+[ext_resource type="Shader" path="res://shader/psx_fade.gdshader" id="2_tsjj2"]
+[ext_resource type="PackedScene" uid="uid://bcyppxojr31wb" path="res://scenes/levels/test.tscn" id="3_t5fk6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gyct1"]
+shader = ExtResource("1_xqin5")
+shader_parameter/color_depth = 4
+shader_parameter/dithering = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_clxld"]
+shader = ExtResource("2_tsjj2")
+shader_parameter/alpha = 20
+shader_parameter/fadeToWhite = false
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kr5gx"]
+sky_top_color = Color(0.755934, 0.658253, 0.467821, 1)
+
+[sub_resource type="Sky" id="Sky_3i0em"]
+sky_material = SubResource("ProceduralSkyMaterial_kr5gx")
+
+[sub_resource type="Environment" id="Environment_cvihh"]
+background_mode = 2
+sky = SubResource("Sky_3i0em")
+ssr_enabled = true
+ssao_enabled = true
+ssao_intensity = 5.42
+ssil_enabled = true
+sdfgi_enabled = true
+
+[node name="Game" type="Node"]
+
+[node name="DitheringContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_gyct1")
+use_parent_material = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="DitheringViewport" type="SubViewport" parent="DitheringContainer"]
+handle_input_locally = false
+canvas_item_default_texture_filter = 3
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="FadeOutContainer" type="SubViewportContainer" parent="DitheringContainer/DitheringViewport"]
+material = SubResource("ShaderMaterial_clxld")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="DitheringContainer/DitheringViewport/FadeOutContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="Test" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport" instance=ExtResource("3_t5fk6")]
+
+[node name="Camera3D" type="Camera3D" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/Test"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.464965, 3.00428)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport"]
+environment = SubResource("Environment_cvihh")
