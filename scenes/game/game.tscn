@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://dro4t7ckgqb0g"]
+[gd_scene load_steps=13 format=3 uid="uid://dro4t7ckgqb0g"]
 
 [ext_resource type="Script" path="res://scenes/game/game.gd" id="1_i65mk"]
 [ext_resource type="Shader" path="res://shader/psx_dither.gdshader" id="1_xqin5"]
 [ext_resource type="Shader" path="res://shader/psx_fade.gdshader" id="2_tsjj2"]
 [ext_resource type="PackedScene" uid="uid://bcyppxojr31wb" path="res://scenes/levels/test.tscn" id="3_t5fk6"]
 [ext_resource type="PackedScene" uid="uid://bp46t2ugcyb41" path="res://scenes/player/player.tscn" id="4_3bajd"]
+[ext_resource type="Shader" path="res://shader/colors.gdshader" id="4_t718e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gyct1"]
 shader = ExtResource("1_xqin5")
@@ -16,8 +17,14 @@ shader = ExtResource("2_tsjj2")
 shader_parameter/alpha = 20
 shader_parameter/fadeToWhite = false
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xwpnh"]
+shader = ExtResource("4_t718e")
+shader_parameter/min_range = 0.763
+shader_parameter/max_range = 1.0
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kr5gx"]
-sky_top_color = Color(0.755934, 0.658253, 0.467821, 1)
+sky_top_color = Color(0.704325, 0.780985, 0.972669, 1)
+sky_curve = 3.05894
 
 [sub_resource type="Sky" id="Sky_3i0em"]
 sky_material = SubResource("ProceduralSkyMaterial_kr5gx")
@@ -25,12 +32,17 @@ sky_material = SubResource("ProceduralSkyMaterial_kr5gx")
 [sub_resource type="Environment" id="Environment_cvihh"]
 background_mode = 2
 sky = SubResource("Sky_3i0em")
+ambient_light_source = 3
+reflected_light_source = 2
 ssr_enabled = true
 ssao_enabled = true
 ssao_radius = 3.33
 ssao_intensity = 5.42
 ssil_enabled = true
 sdfgi_enabled = true
+glow_enabled = true
+glow_intensity = 0.72
+glow_bloom = 0.41
 
 [node name="Game" type="Node"]
 script = ExtResource("1_i65mk")
@@ -67,9 +79,23 @@ handle_input_locally = false
 size = Vector2i(1152, 648)
 render_target_update_mode = 4
 
-[node name="Test" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport" instance=ExtResource("3_t5fk6")]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport"]
+material = SubResource("ShaderMaterial_xwpnh")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
 
-[node name="Player" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/Test" instance=ExtResource("4_3bajd")]
+[node name="SubViewport" type="SubViewport" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport"]
+[node name="Test" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport" instance=ExtResource("3_t5fk6")]
+
+[node name="Player" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport/Test" instance=ExtResource("4_3bajd")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport"]
 environment = SubResource("Environment_cvihh")

@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcyppxojr31wb"]
+[gd_scene load_steps=3 format=3 uid="uid://bcyppxojr31wb"]
 
 [ext_resource type="PackedScene" uid="uid://btvyrwfil0sy6" path="res://models/test_map.tscn" id="1_d6er8"]
+[ext_resource type="Texture2D" uid="uid://emeabnlfimgg" path="res://textures/decal_texture.png" id="2_t7k6o"]
 
 [node name="Test" type="Node3D"]
 
 [node name="test-map" parent="." instance=ExtResource("1_d6er8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0248526, 0, -0.0454929)
+
+[node name="Decal" type="Decal" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0916754, -0.995789, 0, 0.995789, 0.0916754, 0.140827, 1.71163, -7.55956)
+size = Vector3(2, 2, 1.73779)
+texture_albedo = ExtResource("2_t7k6o")
+modulate = Color(0.887318, 0, 0.330959, 1)
