@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcyppxojr31wb"]
+[gd_scene load_steps=6 format=3 uid="uid://bcyppxojr31wb"]
 
 [ext_resource type="PackedScene" uid="uid://btvyrwfil0sy6" path="res://models/test_map.tscn" id="1_d6er8"]
 [ext_resource type="Texture2D" uid="uid://emeabnlfimgg" path="res://textures/decal_texture.png" id="2_t7k6o"]
+[ext_resource type="Texture2D" uid="uid://cpcgkk7276bt3" path="res://textures/blood1.png" id="3_5wreq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_d3p2k"]
+size = Vector3(5, 20, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sniea"]
+size = Vector3(15, 20, 5)
 
 [node name="Test" type="Node3D"]
 
@@ -13,3 +20,37 @@ transform = Transform3D(1, 0, 0, 0, 0.0916754, -0.995789, 0, 0.995789, 0.0916754
 size = Vector3(2, 2, 1.73779)
 texture_albedo = ExtResource("2_t7k6o")
 modulate = Color(0.887318, 0, 0.330959, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8567, 6.24453, 0)
+mesh = SubResource("BoxMesh_d3p2k")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.87208, 2.98937, -10.0489)
+mesh = SubResource("BoxMesh_d3p2k")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.77623, 6.01345, 10.4924)
+mesh = SubResource("BoxMesh_d3p2k")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.94458, 0.0905046, -10.0489)
+mesh = SubResource("BoxMesh_d3p2k")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D3"]
+transform = Transform3D(-0.361006, 0, 0.932563, 0, 1, 0, -0.932563, 0, -0.361006, -5.8511, 6.76191, 9.90619)
+mesh = SubResource("BoxMesh_sniea")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.586825, 0.185078, -0.788279, 0, 0.973527, 0.228572, 0.809714, -0.134132, 0.57129, -11.2083, 0, 7.60919)
+light_color = Color(0.914612, 0.779074, 0.247953, 1)
+
+[node name="Decal2" type="Decal" parent="."]
+transform = Transform3D(0.839743, 0, -0.542984, 0, 1, 0, 0.542984, 0, 0.839743, 0, -0.456991, 0.39502)
+size = Vector3(2, 2, 1.20996)
+texture_albedo = ExtResource("3_5wreq")
+
+[node name="Decal3" type="Decal" parent="."]
+transform = Transform3D(-0.866357, 0, 0.499426, 0, 1, 0, -0.499426, 0, -0.866357, 1.12247, -0.456991, 1.22052)
+size = Vector3(2, 2, 1.20996)
+texture_albedo = ExtResource("3_5wreq")

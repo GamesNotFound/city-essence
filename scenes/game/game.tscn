@@ -19,8 +19,8 @@ shader_parameter/fadeToWhite = false
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xwpnh"]
 shader = ExtResource("4_t718e")
-shader_parameter/min_range = 0.763
-shader_parameter/max_range = 1.0
+shader_parameter/min_range = 0.0
+shader_parameter/max_range = 0.13
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kr5gx"]
 sky_top_color = Color(0.704325, 0.780985, 0.972669, 1)
@@ -40,9 +40,10 @@ ssao_radius = 3.33
 ssao_intensity = 5.42
 ssil_enabled = true
 sdfgi_enabled = true
-glow_enabled = true
 glow_intensity = 0.72
 glow_bloom = 0.41
+volumetric_fog_enabled = true
+volumetric_fog_anisotropy = 0.6
 
 [node name="Game" type="Node"]
 script = ExtResource("1_i65mk")
