@@ -1,0 +1,370 @@
+[gd_scene load_steps=5 format=4 uid="uid://b8ysn8e82ryap"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_asuqt"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fe781"]
+resource_name = "veinCopy_Circle"
+_surfaces = [{
+"aabb": AABB(-0.313315, 0.0245929, -0.321372, 0.62663, 15.0423, 0.610919),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/"),
+"bone_aabbs": [AABB(-0.313315, 0.0245929, -0.321372, 0.62663, 4.62839, 0.610919), AABB(-0.313315, 1.18169, -0.321372, 0.62663, 1.09673e-05, 0.610919), AABB(-0.313315, 1.18169, -0.321372, 0.62663, 2.3142, 0.610919), AABB(-0.313315, 0.0245929, -0.321372, 0.62663, 5.78549, 0.610929), AABB(-0.313315, 0.0245929, -0.321372, 0.62663, 5.78549, 0.610919), AABB(-0.313315, 0.0245929, -0.321372, 0.62663, 8.09969, 0.610919), AABB(-0.313315, 2.33879, -0.321372, 0.62663, 6.94259, 0.610919), AABB(-0.313315, 3.49589, -0.321372, 0.62663, 6.94259, 0.610919), AABB(-0.313315, 4.65298, -0.321372, 0.62663, 6.94259, 0.610919), AABB(-0.313315, 5.81008, -0.321372, 0.62663, 6.94259, 0.610919), AABB(-0.313315, 10.4385, -0.321372, 0.62663, 4.62839, 0.610919), AABB(-0.313315, 8.12428, -0.321372, 0.62663, 5.78549, 0.610919), AABB(-0.313315, 9.28137, -0.321372, 0.62663, 5.78549, 0.610919)],
+"format": 34359745559,
+"index_count": 576,
+"index_data": PackedByteArray("AAAGAAMABgANAAoADQASAA8AEgAGAAAABgASAA0AEADRAA4AEACBANEAgQDPANEAgQCDAM8AgwDNAM8AgwCFAM0AhQDLAM0AhQCHAMsAhwDJAMsAhwCJAMkAiQDHAMkAiQCLAMcAiwDFAMcAiwCNAMUAjQDDAMUAjQCPAMMAjwDBAMMAjwCRAMEAkQC/AMEAkQCTAL8AkwC9AL8AkwCVAL0AlQC7AL0AlQCXALsAlwC5ALsAlwCaALkAmQAxALgAMQBmAC0AZgCcAGMAnAAxAJkAMQCcAGYAAgC1ABMAAgBMALUATACzALUATABOALMATgCxALMATgBQALEAUACvALEAUABSAK8AUgCtAK8AUgBUAK0AVACrAK0AVABWAKsAVgCpAKsAVgBYAKkAWACnAKkAWABaAKcAWgClAKcAWgBcAKUAXACjAKUAXABeAKMAXgChAKMAXgBgAKEAYACfAKEAYABiAJ8AYgCdAJ8AYgBlAJ0ACACAAAUACAAWAIAAFgB+AIAAFgAYAH4AGAB8AH4AGAAaAHwAGgB6AHwAGgAcAHoAHAB4AHoAHAAeAHgAHgB2AHgAHgAgAHYAIAB0AHYAIAAiAHQAIgByAHQAIgAkAHIAJABwAHIAJAAmAHAAJgBuAHAAJgAoAG4AKABsAG4AKAAqAGwAKgBqAGwAKgAsAGoALABoAGoALAAvAGgADABJAAkADADQAEkA0ABHAEkA0ADOAEcAzgBFAEcAzgDMAEUAzABDAEUAzADKAEMAygBBAEMAygDIAEEAyAA/AEEAyADGAD8AxgA9AD8AxgDEAD0AxAA7AD0AxADCADsAwgA5ADsAwgDAADkAwAA3ADkAwAC+ADcAvgA1ADcAvgC8ADUAvAAzADUAvAC6ADMAugAwADMAugC3ADAAFACCABEAFAC2AIIAtgCEAIIAtgC0AIQAtACGAIQAtACyAIYAsgCIAIYAsgCwAIgAsACKAIgAsACuAIoArgCMAIoArgCsAIwArACOAIwArACqAI4AqgCQAI4AqgCoAJAAqACSAJAAqACmAJIApgCUAJIApgCkAJQApACWAJQApACiAJYAogCYAJYAogCgAJgAoACbAJgAoACeAJsABABLAAEABAB/AEsAfwBNAEsAfwB9AE0AfQBPAE0AfQB7AE8AewBRAE8AewB5AFEAeQBTAFEAeQB3AFMAdwBVAFMAdwB1AFUAdQBXAFUAdQBzAFcAcwBZAFcAcwBxAFkAcQBbAFkAcQBvAFsAbwBdAFsAbwBtAF0AbQBfAF0AbQBrAF8AawBhAF8AawBpAGEAaQBkAGEAaQBnAGQACwAVAAcACwBKABUASgAXABUASgBIABcASAAZABcASABGABkARgAbABkARgBEABsARAAdABsARABCAB0AQgAfAB0AQgBAAB8AQAAhAB8AQAA+ACEAPgAjACEAPgA8ACMAPAAlACMAPAA6ACUAOgAnACUAOgA4ACcAOAApACcAOAA2ACkANgArACkANgA0ACsANAAuACsANAAyAC4A"),
+"lods": [0.000295281, PackedByteArray("AAAGAAMAEgAGAAAABgASAA0ADQASAA8ABgANAAoAEACBAOsAgQANAesAgQCDAA0BgwCFAA0BhQCHAA0BhwCJAA0BiQAMAQ0BiQCLAAwBiwALAQwBiwCNAAsBjQCPAAsBjwCRAAsBkQAKAQsBkQCTAAoBkwCVAAoBlQAJAQoBlQCXAAkBlwAIAQkBlwCaAAgBmQAxALgAnAAxAJkAMQCcAGYAZgCcAGMAMQBmAC0A6ADzABMA8wCxABMA8wCvALEA8wCtAK8A8wD0AK0A9ACpAK0A9AD1AKkA9QCjAKkA9QD2AKMA9gD3AKMA9wCdAKMA9wD4AJ0A+AD5AJ0ACAABAekACAAWAAEBFgAAAQEBFgAYAAABGAD/AAABGAAaAP8AGgD+AP8AGgAcAP4AHAD9AP4AHAAeAP0AHgD8AP0AHgAgAPwAIAD7APwAIAAiAPsAIgAkAPsAJAAmAPsAJgAoAPsAKAD6APsAKAAqAPoAKgAsAPoALAAvAPoADADOAAkAzgBBAAkAzgA/AEEAzgDGAD8AxgA9AD8AxgDEAD0AxAA7AD0AxAA5ADsAxAAwADkAxAC+ADAAvgC6ADAAugC3ADAA7ACCABEA7ACEAIIA7AAHAYQABwGGAIQABwGIAIYABwEGAYgABgGKAIgABgEFAYoABQGMAIoABQGOAIwABQEEAY4ABAGQAI4ABAGSAJAABAGUAJIABAEDAZQAAwGWAJQAAwGYAJYAAwECAZgAAgGbAJgABABPAAEABAB/AE8AfwB9AE8AfQB7AE8AewB5AE8AeQB3AE8AdwBZAE8AdwB1AFkAdQBtAFkAbQBbAFkAbQBdAFsAbQBfAF0AbQBnAF8AZwBhAF8AZwBkAGEA6gAVAAcA6gAXABUA6gAZABcA6gAbABkA6gAdABsA6gDyAB0A8gAfAB0A8gDxAB8A8QAhAB8A8QDwACEA8AAjACEA8ADvACMA7wAlACMA7wDuACUA7gAnACUA7gDtACcA7QApACcA7QArACkA7QAuACsA"), 0.154174, PackedByteArray("AAAGAAMAEgAGAAAABgASAA0ADQASAA8ABgANAAoAEACDAOEAgwCHAOEAhwCLAOEAiwCNAOEAjQAJAOEAjQCRAAkAkQDnAAkACQDnADAAkQCTAOcAkwCVAOcAlQCXAOcAlwCaAOcAmQAxALgAnAAxAJkAMQCcAGYAMQBmAC0A3gDkABMA5ACdABMA5ABnAJ0ABABnAOQABADkAAEACAAWAN8AFgAYAN8AGAAaAN8AGgAcAN8AHAAeAN8AHgAgAN8AIAAiAN8AIgAkAN8AJAAmAN8AJgAoAN8AKADlAN8AKAAqAOUAKgAsAOUALAAvAOUA4gCEABEA4gCIAIQA4gCMAIgA4gCOAIwA4gDmAI4A5gCSAI4A5gCUAJIA5gCWAJQA5gCYAJYA5gCbAJgA4AAVAAcA4AAXABUA4AAZABcA4AAbABkA4AAdABsA4AAfAB0A4AAhAB8A4AAjACEA4AAlACMA4AAnACUA4ADjACcA4wApACcA4wArACkA4wAuACsA"), 0.156109, PackedByteArray("AAAGAAMAEgAGAAAABgASAA0ADQASAA8ABgANAAoAEACHANkAhwCLANkAiwAJANkAiwCRAAkAkQAwAAkAkQCaADAAMQBmAC0AMQCcAGYAnAAxAJkA1gCdABMA1gBnAJ0ABABnANYACAAWANcAFgAgANcAIAAmANcAJgDcANcAJgAvANwA2gCIABEA2gCMAIgA2gDdAIwA3QCSAIwA3QCbAJIA2AAVAAcA2AAfABUA2AAlAB8A2ADbACUA2wAuACUA"), 0.333744, PackedByteArray("CgAAAA8ABgAAAAoAEACHAAkAhwAwAAkAhwCaADAAMQCcAC0AnAAxAJkACAAWAAEAFgCdAAEAFgAvAJ0AAQCIABEA1QCbAIgA0gDVAIgA0wAVAAcA0wDUABUA1AAuABUA")],
+"material": SubResource("StandardMaterial3D_asuqt"),
+"primitive": 3,
+"skin_data": PackedByteArray("AAAFAAQAAAD1/uAAKQAAAAAABQAEAAAA9f7gACkAAAAAAAUABAAAAPX+4AApAAAAAAAFAAQAAAAT/5QAVwAAAAAABQAEAAAAE/+UAFcAAAAAAAUABAAAABP/lABXAAAAAAAFAAQAAACj/zUAJQAAAAAABQAEAAAAo/81ACUAAAAAAAUABAAAAKP/NQAlAAAAAAAEAAUAAwAb/2EAQQBAAAAABAAFAAMAG/9hAEEAQAAAAAQABQADABv/YQBBAEAAAAAEAAMABQDs/T0BcwBhAAAABAADAAUA7P09AXMAYQAAAAQAAwAFAOz9PQFzAGEAAAAEAAUAAwC2/KoB0QDMAAAABAAFAAMAtvyqAdEAzAAAAAQABQADALb8qgHRAMwAAAADAAUABADJ/e0A4ABmAAAAAwAFAAQAyf3tAOAAZgAAAAMABQAEAMn97QDgAGYAAQAFAAIAAAC5/zYADgAAAAEABQACAAAAuf82AA4AAAACAAYAAwAAADf7NgORAQAAAgAGAAMAAAA3+zYDkQEAAAMABgAHAAIAPv5gAUIAHQADAAYABwACAD7+YAFCAB0ABAAFAAgABgCN/RUCSgARAAQABQAIAAYAjf0VAkoAEQAFAAQAAAAAAAT6+gUAAAAABQAEAAAAAAAE+voFAAAAAAYABQAIAAcAFv7aAQcABgAGAAUACAAHABb+2gEHAAYABwAGAAgACwBX/3EALQAJAAcABgAIAAsAV/9xAC0ACQAIAAwACQAGANz+xgAuAC0ACAAMAAkABgDc/sYALgAtAAkACgAIAAAAH/5JAZYAAAAJAAoACAAAAB/+SQGWAAAACgALAAAAAADc/yIAAAAAAAoACwAAAAAA3P8iAAAAAAALAAwAAAAAAEb/uAAAAAAACwAMAAAAAABG/7gAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAKAAAAAAD4/wYAAAAAAAwACgAAAAAA+P8GAAAAAAAMAAoAAAAAAPj/BgAAAAAADAAKAAAAAADu/xAAAAAAAAwACgAAAAAA7v8QAAAAAAALAAwACQAKAIL/VQAZAA4ACwAMAAkACgCC/1UAGQAOAAoAAAAAAAAA//8AAAAAAAAKAAAAAAAAAP//AAAAAAAACQAIAAoABwDa/HUCpwAHAAkACAAKAAcA2vx1AqcABwAIAAwACQAAAJP+KAFDAAAACAAMAAkAAACT/igBQwAAAAcACAAAAAAA4f8dAAAAAAAHAAgAAAAAAOH/HQAAAAAABgAFAAAAAADN/zEAAAAAAAYABQAAAAAAzf8xAAAAAAAFAAQAAAAAAI//bwAAAAAABQAEAAAAAACP/28AAAAAAAQABgAHAAUAKv73AKsAMQAEAAYABwAFACr+9wCrADEAAwAHAAIAAAC0/y0AHAAAAAMABwACAAAAtP8tABwAAAACAAYAAwAAAPn+5AAhAAAAAgAGAAMAAAD5/uQAIQAAAAEABQAAAAAA4/4bAQAAAAABAAUAAAAAAOP+GwEAAAAAAQACAAAAAADB/z0AAAAAAAEAAgAAAAAAwf89AAAAAAACAAYAAAAAABn7rgQ2AAAAAgAGAAAAAAAZ+64ENgAAAAMABQAHAAIAWv69AJ8ARwADAAUABwACAFr+vQCfAEcABAADAAgAAAAF/7EAJAAiAAQAAwAIAAAABf+xACQAIgAFAAQABgAJAED8OQJRATMABQAEAAYACQBA/DkCUQEzAAYABwAJAAUAyf7KAFgAEQAGAAcACQAFAMn+ygBYABEABwAIAAYACwDO/uMAKwAhAAcACAAGAAsAzv7jACsAIQAIAAkABgAAABr/rgA1AAAACAAJAAYAAAAa/64ANQAAAAkACAAHAAAABv/vAAkAAAAJAAgABwAAAAb/7wAJAAAACgAIAAsAAACs/0YACwAAAAoACAALAAAArP9GAAsAAAALAAwAAAAAAI3/cQAAAAAACwAMAAAAAACN/3EAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAALAAAAAAD3/wcAAAAAAAwACwAAAAAA9/8HAAAAAAALAAwAAAAAAKL/XAAAAAAACwAMAAAAAACi/1wAAAAAAAoACwAAAAAA7v8QAAAAAAAKAAsAAAAAAO7/EAAAAAAACQAIAAAAAADT/ysAAAAAAAkACAAAAAAA0/8rAAAAAAAIAAkADAAGAD/9kgIkAAkACAAJAAwABgA//ZICJAAJAAcABgAFAAgAVP+GABYADQAHAAYABQAIAFT/hgAWAA0ABgAJAAcAAADq/w0ABgAAAAYACQAHAAAA6v8NAAYAAAAFAAQABgAAAHj4XAQqAwAABQAEAAYAAAB4+FwEKgMAAAQABgAIAAUAJv9nAFMAHgAEAAYACAAFACb/ZwBTAB4AAwAFAAcAAgCW+yQEIwAgAAMABQAHAAIAlvskBCMAIAACAAYAAwAAAK/5DAZCAAAAAgAGAAMAAACv+QwGQgAAAAEAAgAAAAAA3f8hAAAAAAABAAIAAAAAAN3/IQAAAAAAAQAFAAMAAAD2/sAARwAAAAEABQADAAAA9v7AAEcAAAACAAYAAAADANn99wEhAAwAAgAGAAAAAwDZ/fcBIQAMAAMABAAHAAUAYf0NAksARAADAAQABwAFAGH9DQJLAEQABAAFAAAAAAAH/u8BCAAAAAQABQAAAAAAB/7vAQgAAAAFAAYAAAAAADL/zAAAAAAABQAGAAAAAAAy/8wAAAAAAAYABwAJAAgAJf3BAg8ACAAGAAcACQAIACX9wQIPAAgABwAIAAsACQBs/18ALAAHAAcACAALAAkAbP9fACwABwAIAAcAAAAAAOj/FgAAAAAACAAHAAAAAADo/xYAAAAAAAkACgAHAAgAeP40AS4AJAAJAAoABwAIAHj+NAEuACQACgAIAAAAAADz/wsAAAAAAAoACAAAAAAA8/8LAAAAAAALAAwAAAAAAOX/GQAAAAAACwAMAAAAAADl/xkAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAALAAwAAAAAAGr/lAAAAAAACwAMAAAAAABq/5QAAAAAAAoACAAAAAAA1/8nAAAAAAAKAAgAAAAAANf/JwAAAAAACQAIAAAAAADX/ycAAAAAAAkACAAAAAAA1/8nAAAAAAAIAAkABgAAAJz9PQEkAQAACAAJAAYAAACc/T0BJAEAAAcACAALAAYADf95AEQANAAHAAgACwAGAA3/eQBEADQABgAHAAkABQBF+yAEiQAPAAYABwAJAAUARfsgBIkADwAFAAYACQAEADz+QgFxAA4ABQAGAAkABAA8/kIBcQAOAAQABQAGAAAAg/5TARsADAAEAAUABgAAAIP+UwEbAAwAAwAEAAcABQAd/vcA1wATAAMABAAHAAUAHf73ANcAEwACAAYAAAAAADv9TAJ3AAAAAgAGAAAAAAA7/UwCdwAAAAEAAwAFAAIAn/9NAAkACAABAAMABQACAJ//TQAJAAgADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAALAAwAAAAAAMX/OQAAAAAACwAMAAAAAADF/zkAAAAAAAoAAAAAAAAA//8AAAAAAAAKAAAAAAAAAP//AAAAAAAACQAKAAgAAACK9l0JFwAAAAkACgAIAAAAivZdCRcAAAAIAAwACQAAALv/PAAHAAAACAAMAAkAAAC7/zwABwAAAAcACAALAAYAoP9HAA8ACAAHAAgACwAGAKD/RwAPAAgABgAHAAUAAADa/xUADwAAAAYABwAFAAAA2v8VAA8AAAAFAAQAAwAAALP/OQARAAAABQAEAAMAAACz/zkAEQAAAAQABQAGAAgAEv+/ACUABwAEAAUABgAIABL/vwAlAAcAAwAFAAcABAB+/08AJAANAAMABQAHAAQAfv9PACQADQACAAYAAwAAACP/qgAwAAAAAgAGAAMAAAAj/6oAMAAAAAEABQADAAAATP6qAQcAAAABAAUAAwAAAEz+qgEHAAAAAAAFAAQAAAD1/uAAKQAAAAAABAAFAAMAG/9hAEEAQAAMAAoAAAAAAPj/BgAAAAAADAAAAAAAAAD//wAAAAAAAAAABQAEAAAA9f7gACkAAAAAAAUABAAAABP/lABXAAAAAAAEAAUAAwAb/2EAQQBAAAAABAADAAUA7P09AXMAYQAAAAMABQAEAMn97QDgAGYADAAKAAAAAAD4/wYAAAAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAAAAAFAAQAAAD1/uAAKQAAAAAABQAEAAAAE/+UAFcAAAAAAAQABQADABv/YQBBAEAAAAAEAAMABQDs/T0BcwBhAAAAAwAFAAQAyf3tAOAAZgAMAAoAAAAAAPj/BgAAAAAACAAJAAYAAAAa/64ANQAAAAwAAAAAAAAA//8AAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAAABQAEAAAA9f7gACkAAAAAAAUABAAAABP/lABXAAAAAAAEAAUAAwAb/2EAQQBAAAAABAADAAUA7P09AXMAYQAAAAMABQAEAMn97QDgAGYADAAKAAAAAAD4/wYAAAAAAAkACAAKAAcA2vx1AqcABwAIAAwACQAAAJP+KAFDAAAABwAIAAAAAADh/x0AAAAAAAYABQAAAAAAzf8xAAAAAAAFAAQAAAAAAI//bwAAAAAAAwAFAAcAAgBa/r0AnwBHAAgACQAGAAAAGv+uADUAAAAJAAgABwAAAAb/7wAJAAAACgAIAAsAAACs/0YACwAAAAsADAAAAAAAjf9xAAAAAAAMAAAAAAAAAP//AAAAAAAADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAKAAsAAAAAAO7/EAAAAAAABgAJAAcAAADq/w0ABgAAAAUABAAGAAAAePhcBCoDAAAEAAYACAAFACb/ZwBTAB4AAwAFAAcAAgCW+yQEIwAgAAIABgADAAAAr/kMBkIAAAABAAIAAAAAAN3/IQAAAAAADAAAAAAAAAD//wAAAAAAAAoACAAAAAAA1/8nAAAAAAAHAAgACwAGAA3/eQBEADQABQAGAAkABAA8/kIBcQAOAAQABQAGAAAAg/5TARsADAADAAQABwAFAB3+9wDXABMADAAAAAAAAAD//wAAAAAAAAwAAAAAAAAA//8AAAAAAAAKAAAAAAAAAP//AAAAAAAABwAIAAsABgCg/0cADwAIAAYABwAFAAAA2v8VAA8AAAACAAYAAwAAACP/qgAwAAAA"),
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 270,
+"vertex_data": PackedByteArray("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4sgOPgB3yTxqP5Q+AqWAPgB3yTxqLk2+5MgOvuIRcUFqP5Q+TiO6sYOAFEHoiqS+AqWAvuIRcUFqLk2+AqWAPuIRcUFqLk2+4sgOPuIRcUFqP5Q+TiO6sQB3yTzoiqS+AqWAvgB3yTxqLk2+5MgOvgB3yTxqP5Q+4sgOPgB3yTxqP5Q+AqWAPgB3yTxqLk2+5MgOvuIRcUFqP5Q+5MgOvv4DJ0FqP5Q+5MgOvoWAFEFqP5Q+5MgOvgz9AUFqP5Q+5MgOviXz3kBqP5Q+5MgOvjLsuUBqP5Q+TiO6sZu8X0DoiqS+TiO6sYOAFEHoiqS+TiO6sfwDJ0HoiqS+TiO6sXSHOUHoiqS+TiO6se4KTEHoiqS+TiO6sWiOXkHoiqS+TiO6seARcUHoiqS+AqWAvuIRcUFqLk2+AqWAvniHOUFqLk2+AqWAviXz3kBqLk2+AqWAvjLsuUBqLk2+AqWAvkDllEBqLk2+AqWAvpu8X0BqLk2+AqWAvrmuFUBqLk2+AqWAvqRBlz9qLk2+AqWAPuIRcUFqLk2+AqWAPniHOUFqLk2+AqWAPgz9AUFqLk2+AqWAPjLsuUBqLk2+AqWAPkDllEBqLk2+AqWAPpu8X0BqLk2+4sgOPuIRcUFqP5Q+4sgOPmiOXkFqP5Q+4sgOPniHOUFqP5Q+4sgOPgz9AUFqP5Q+4sgOPiXz3kBqP5Q+4sgOPrmuFUBqP5Q+/3///////7+aqf9/////P2RW/3////8//3///////7+aqf9/////Pzbo/3////8//3///////7///8m4////vzbo/3////8//////////7//f///////v///ybj///+//////////7//f///////vwAAybj///+//3///////78AAMm4////v8gX/3////8//3///////79kVv9/////P8gX/3////8////JuP///7826P9/////P///ybj///+/Nuj/f////z///8m4////vzbo/3////8////JuP///7826P9/////P///ybj///+/Nuj/f////z///8m4////vzbo/3////8////JuP///7826P9/////P///ybj///+/Nuj/f////z///8m4////vzbo/3////8////JuP///7826P9/////P///ybj///+/Nuj/f////z///8m4////vzbo/3////8//38AAP///7///8m4////vzbo/3////8//////////7//fwAA////v///ybj///+//////////7///8m4////v/////////+////JuP///7//////////v///ybj///+//////////7///8m4////v/////////+////JuP///7//////////v///ybj///+//////////7///8m4////v/////////+////JuP///7//////////v///ybj///+//////////7///8m4////v/////////+////JuP///7//////////v///ybj///+/mqn/f////z9kVv9/////P5qp/3////8/ZFb/f////z+aqf9/////P2RW/3////8/mqn/f////z9kVv9/////P5qp/3////8/ZFb/f////z+aqf9/////P2RW/3////8/mqn/f////z9kVv9/////P5qp/3////8/ZFb/f////z+aqf9/////P2RW/3////8/mqn/f////z9kVv9/////P5qp/3////8/ZFb/f////z+aqf9/////P2RW/3////8//38AAP///7+aqf9/////P2RW/3////8//38AAP///7+aqf9/////Pzbo/3////8/mqn/f////z826P9/////P5qp/3////8/Nuj/f////z+aqf9/////Pzbo/3////8/mqn/f////z826P9/////P5qp/3////8/Nuj/f////z+aqf9/////Pzbo/3////8/mqn/f////z826P9/////P5qp/3////8/Nuj/f////z+aqf9/////Pzbo/3////8/mqn/f////z826P9/////P5qp/3////8/Nuj/f////z+aqf9/////Pzbo/3////8/AADJuP///7/IF/9/////PwAAybj///+/yBf/f////z8AAMm4////v8gX/3////8/AADJuP///7/IF/9/////PwAAybj///+/yBf/f////z8AAMm4////v8gX/3////8/AADJuP///7/IF/9/////PwAAybj///+/yBf/f////z8AAMm4////v8gX/3////8/AADJuP///7/IF/9/////PwAAybj///+/yBf/f////z8AAMm4////v8gX/3////8//38AAP///78AAMm4////v8gX/3////8//38AAP///79kVv9/////P8gX/3////8/ZFb/f////z/IF/9/////P2RW/3////8/yBf/f////z9kVv9/////P8gX/3////8/ZFb/f////z/IF/9/////P2RW/3////8/yBf/f////z9kVv9/////P8gX/3////8/ZFb/f////z/IF/9/////P2RW/3////8/yBf/f////z9kVv9/////P8gX/3////8/ZFb/f////z/IF/9/////P2RW/3////8/yBf/f////z9kVv9/////P8gX/3////8//////////7//fwAA////vwAAybj///+//////////78AAMm4////v/////////+/AADJuP///7//////////vwAAybj///+//////////78AAMm4////v/////////+/AADJuP///7//////////vwAAybj///+//////////78AAMm4////v/////////+/AADJuP///7//////////vwAAybj///+//////////78AAMm4////v/////////+/AADJuP///7//////////vwAAybj///+/01H/f////z///8m4////v///ybj///+/TCv/f////z8Cg/9/////Pzbo/3////8////JuP///78AABO9////v8gX/3////8////JuP///7826P9/////P8gX/3////8/ZFb/f////z826P9/////P///ybj///+/AACCvv///7/IF/9/////P///ybj///+/6oP/f////z826P9/////P8gX/3////8/AACmxP///79kVv9/////Pzbo/3////8////JuP///78AAMm4////v8gX/3////8////JuP///7///8m4////v///ybj///+////JuP///7///8m4////v///ybj///+/ZFb/f////z9kVv9/////P2RW/3////8/ZFb/f////z9kVv9/////P2RW/3////8/ZFb/f////z826P9/////Pzbo/3////8/Nuj/f////z826P9/////Pzbo/3////8/Nuj/f////z826P9/////Pzbo/3////8/yBf/f////z/IF/9/////P8gX/3////8/yBf/f////z/IF/9/////P8gX/3////8/AADJuP///78AAMm4////vwAAybj///+/AADJuP///78AAMm4////vwAAybj///+/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="Skin" id="Skin_t7uhl"]
+resource_name = "Skin"
+bind_count = 13
+bind/0/name = &"Bone"
+bind/0/bone = -1
+bind/0/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+bind/1/name = &"Bone.001"
+bind/1/bone = -1
+bind/1/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.16413, 0)
+bind/2/name = &"Bone.002"
+bind/2/bone = -1
+bind/2/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.33891, 0)
+bind/3/name = &"Bone.003"
+bind/3/bone = -1
+bind/3/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.48087, 0)
+bind/4/name = &"Bone.004"
+bind/4/bone = -1
+bind/4/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.63989, 0)
+bind/5/name = &"Bone.005"
+bind/5/bone = -1
+bind/5/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.78841, 0)
+bind/6/name = &"Bone.006"
+bind/6/bone = -1
+bind/6/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.9435, 0)
+bind/7/name = &"Bone.007"
+bind/7/bone = -1
+bind/7/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.12483, 0)
+bind/8/name = &"Bone.008"
+bind/8/bone = -1
+bind/8/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.27992, 0)
+bind/9/name = &"Bone.009"
+bind/9/bone = -1
+bind/9/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.4284, 0)
+bind/10/name = &"Bone.010"
+bind/10/bone = -1
+bind/10/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.5835, 0)
+bind/11/name = &"Bone.011"
+bind/11/bone = -1
+bind/11/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.7517, 0)
+bind/12/name = &"Bone.012"
+bind/12/bone = -1
+bind/12/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.9003, 0)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_13fox"]
+radius = 0.3
+height = 1.0
+
+[node name="Veins" type="Node3D"]
+
+[node name="veinCopy" type="Node3D" parent="."]
+
+[node name="Armature" type="Node3D" parent="veinCopy"]
+
+[node name="Skeleton3D" type="Skeleton3D" parent="veinCopy/Armature"]
+bones/0/name = "Bone"
+bones/0/parent = -1
+bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+bones/0/enabled = true
+bones/0/position = Vector3(0, 0, 0)
+bones/0/rotation = Quaternion(0, 0, 0, 1)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/name = "Bone.001"
+bones/1/parent = 0
+bones/1/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16413, 0)
+bones/1/enabled = true
+bones/1/position = Vector3(0, 1.16413, 0)
+bones/1/rotation = Quaternion(0, 0, 0, 1)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/name = "Bone.002"
+bones/2/parent = 1
+bones/2/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17477, 0)
+bones/2/enabled = true
+bones/2/position = Vector3(0, 1.17477, 0)
+bones/2/rotation = Quaternion(0, 0, 0, 1)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/name = "Bone.003"
+bones/3/parent = 2
+bones/3/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14196, 0)
+bones/3/enabled = true
+bones/3/position = Vector3(0, 1.14196, 0)
+bones/3/rotation = Quaternion(0, 0, 0, 1)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/name = "Bone.004"
+bones/4/parent = 3
+bones/4/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15902, 0)
+bones/4/enabled = true
+bones/4/position = Vector3(0, 1.15902, 0)
+bones/4/rotation = Quaternion(0, 0, 0, 1)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/name = "Bone.005"
+bones/5/parent = 4
+bones/5/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14852, 0)
+bones/5/enabled = true
+bones/5/position = Vector3(0, 1.14852, 0)
+bones/5/rotation = Quaternion(0, 0, 0, 1)
+bones/5/scale = Vector3(1, 1, 1)
+bones/6/name = "Bone.006"
+bones/6/parent = 5
+bones/6/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15509, 0)
+bones/6/enabled = true
+bones/6/position = Vector3(0, 1.15509, 0)
+bones/6/rotation = Quaternion(0, 0, 0, 1)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/name = "Bone.007"
+bones/7/parent = 6
+bones/7/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.18134, 0)
+bones/7/enabled = true
+bones/7/position = Vector3(0, 1.18134, 0)
+bones/7/rotation = Quaternion(0, 0, 0, 1)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/name = "Bone.008"
+bones/8/parent = 7
+bones/8/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15508, 0)
+bones/8/enabled = true
+bones/8/position = Vector3(0, 1.15508, 0)
+bones/8/rotation = Quaternion(0, 0, 0, 1)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/name = "Bone.009"
+bones/9/parent = 8
+bones/9/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14852, 0)
+bones/9/enabled = true
+bones/9/position = Vector3(0, 1.14852, 0)
+bones/9/rotation = Quaternion(0, 0, 0, 1)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/name = "Bone.010"
+bones/10/parent = 9
+bones/10/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15508, 0)
+bones/10/enabled = true
+bones/10/position = Vector3(0, 1.15508, 0)
+bones/10/rotation = Quaternion(0, 0, 0, 1)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/name = "Bone.011"
+bones/11/parent = 10
+bones/11/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16821, 0)
+bones/11/enabled = true
+bones/11/position = Vector3(0, 1.16821, 0)
+bones/11/rotation = Quaternion(0, 0, 0, 1)
+bones/11/scale = Vector3(1, 1, 1)
+bones/12/name = "Bone.012"
+bones/12/parent = 11
+bones/12/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14852, 0)
+bones/12/enabled = true
+bones/12/position = Vector3(0, 1.14852, 0)
+bones/12/rotation = Quaternion(0, 0, 0, 1)
+bones/12/scale = Vector3(1, 1, 1)
+
+[node name="Circle" type="MeshInstance3D" parent="veinCopy/Armature/Skeleton3D"]
+mesh = SubResource("ArrayMesh_fe781")
+skin = SubResource("Skin_t7uhl")
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+bone_name = "Bone"
+bone_idx = 0
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D2" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16413, 0)
+bone_name = "Bone.001"
+bone_idx = 1
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16609, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D2/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D3" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.33891, 0)
+bone_name = "Bone.002"
+bone_idx = 2
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.33703, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D3/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D4" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.48087, 0)
+bone_name = "Bone.003"
+bone_idx = 3
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.48855, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D4/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D5" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.63989, 0)
+bone_name = "Bone.004"
+bone_idx = 4
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.64978, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D5/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D6" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.78841, 0)
+bone_name = "Bone.005"
+bone_idx = 5
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.80615, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D6/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D7" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.9435, 0)
+bone_name = "Bone.006"
+bone_idx = 6
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.96738, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D7/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D8" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.12483, 0)
+bone_name = "Bone.007"
+bone_idx = 7
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.1286, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D8/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D9" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.27992, 0)
+bone_name = "Bone.008"
+bone_idx = 8
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.27526, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D9/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D10" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.4284, 0)
+bone_name = "Bone.009"
+bone_idx = 9
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.4122, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D10/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D11" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.5835, 0)
+bone_name = "Bone.010"
+bone_idx = 10
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.5977, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D11/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D12" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7517, 0)
+bone_name = "Bone.011"
+bone_idx = 11
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7784, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D12/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="BoneAttachment3D13" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.9003, 0)
+bone_name = "Bone.012"
+bone_idx = 12
+
+[node name="RigidBody3D" type="RigidBody3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.9105, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="veinCopy/Armature/Skeleton3D/BoneAttachment3D13/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
+shape = SubResource("CapsuleShape3D_13fox")
+
+[node name="Generic6DOFJoint3D" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D2/RigidBody3D")
+
+[node name="Generic6DOFJoint3D2" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D2/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D3/RigidBody3D")
+
+[node name="Generic6DOFJoint3D3" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D3/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D4/RigidBody3D")
+
+[node name="Generic6DOFJoint3D4" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D4/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D5/RigidBody3D")
+
+[node name="Generic6DOFJoint3D5" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D5/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D6/RigidBody3D")
+
+[node name="Generic6DOFJoint3D6" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D6/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D7/RigidBody3D")
+
+[node name="Generic6DOFJoint3D7" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D7/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D8/RigidBody3D")
+
+[node name="Generic6DOFJoint3D8" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D8/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D9/RigidBody3D")
+
+[node name="Generic6DOFJoint3D9" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D9/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D10/RigidBody3D")
+
+[node name="Generic6DOFJoint3D10" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D10/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D11/RigidBody3D")
+
+[node name="Generic6DOFJoint3D11" type="Generic6DOFJoint3D" parent="veinCopy/Armature/Skeleton3D"]
+node_a = NodePath("../BoneAttachment3D11/RigidBody3D")
+node_b = NodePath("../BoneAttachment3D12/RigidBody3D")
