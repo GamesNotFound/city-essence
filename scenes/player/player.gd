@@ -6,6 +6,8 @@ const SENSITIVITY = 0.005
 
 @onready var head: Node3D = $Head
 @onready var camera: Camera3D = $Head/Camera3D
+@onready var interact_ray_cast: RayCast3D = $Head/Camera3D/InteractRayCast
+@onready var grab_node: Node3D = null 
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -24,6 +26,19 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+	# Handle grab
+	if Input.is_action_pressed("grab"):
+		var collider = interact_ray_cast.get_collider()
+		if collider is RigidBody3D:
+			grab_node = collider
+	
+	if Input.is_action_just_released("grab"):
+		grab_node = null
+			
+	if grab_node != null:
+		grab_node.global_position = camera.global_position
+		grab_node.global_position += -camera.global_transform.basis.z * 2
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dro4t7ckgqb0g"]
+[gd_scene load_steps=16 format=3 uid="uid://dro4t7ckgqb0g"]
 
 [ext_resource type="Script" path="res://scenes/game/game.gd" id="1_i65mk"]
 [ext_resource type="Shader" path="res://shader/psx_dither.gdshader" id="1_xqin5"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bcyppxojr31wb" path="res://scenes/levels/test.tscn" id="3_t5fk6"]
 [ext_resource type="PackedScene" uid="uid://bp46t2ugcyb41" path="res://scenes/player/player.tscn" id="4_3bajd"]
 [ext_resource type="Shader" path="res://shader/colors.gdshader" id="4_t718e"]
+[ext_resource type="PackedScene" uid="uid://djyx5aeyw47vp" path="res://scenes/veins2.tscn" id="7_ar4pq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gyct1"]
 shader = ExtResource("1_xqin5")
@@ -44,6 +45,11 @@ glow_intensity = 0.72
 glow_bloom = 0.41
 volumetric_fog_enabled = true
 volumetric_fog_anisotropy = 0.6
+
+[sub_resource type="BoxMesh" id="BoxMesh_oe15a"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n8wub"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
 [node name="Game" type="Node"]
 script = ExtResource("1_i65mk")
@@ -100,3 +106,26 @@ render_target_update_mode = 4
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport"]
 environment = SubResource("Environment_cvihh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.657873, 0.290318, -2.86853)
+mesh = SubResource("BoxMesh_oe15a")
+skeleton = NodePath("../../../../../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer/SubViewport/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.657873, 0.290318, -2.86853)
+shape = SubResource("ConvexPolygonShape3D_n8wub")
+
+[node name="Veins2" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.208171, 0.946914, -2.79241)
+
+[node name="Veins3" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
+transform = Transform3D(0.776805, 0, -0.629741, 0, 1, 0, 0.629741, 0, 0.776805, -0.208171, 1.82427, -2.79241)
+
+[node name="Veins4" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
+transform = Transform3D(0.904381, 0, -0.426727, 0, 1, 0, 0.426727, 0, 0.904381, -0.208171, 4.37529, -2.79241)
+
+[node name="Veins5" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
+transform = Transform3D(0.906131, 0, 0.422998, 0, 1, 0, -0.422998, 0, 0.906131, -0.208171, 6.10384, -2.29297)
