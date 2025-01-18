@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bcyppxojr31wb" path="res://scenes/levels/test.tscn" id="3_t5fk6"]
 [ext_resource type="PackedScene" uid="uid://bp46t2ugcyb41" path="res://scenes/player/player.tscn" id="4_3bajd"]
 [ext_resource type="Shader" path="res://shader/colors.gdshader" id="4_t718e"]
-[ext_resource type="PackedScene" uid="uid://djyx5aeyw47vp" path="res://scenes/veins2.tscn" id="7_ar4pq"]
+[ext_resource type="PackedScene" uid="uid://djyx5aeyw47vp" path="res://scenes/veins/veins2.tscn" id="7_ar4pq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gyct1"]
 shader = ExtResource("1_xqin5")
@@ -119,13 +119,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.657873, 0.290318, -2.86853)
 shape = SubResource("ConvexPolygonShape3D_n8wub")
 
 [node name="Veins2" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.208171, 0.946914, -2.79241)
+transform = Transform3D(-0.755019, 0, -0.655703, 0, 1, 0, 0.655703, 0, -0.755019, 0.167677, 0.784622, -2.36863)
 
 [node name="Veins3" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
-transform = Transform3D(0.776805, 0, -0.629741, 0, 1, 0, 0.629741, 0, 0.776805, -0.208171, 1.82427, -2.79241)
+transform = Transform3D(0.776805, 0, -0.629741, 0, 1, 0, 0.629741, 0, 0.776805, 1.1168, 0.753758, -2.42533)
 
 [node name="Veins4" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
-transform = Transform3D(0.904381, 0, -0.426727, 0, 1, 0, 0.426727, 0, 0.904381, -0.208171, 4.37529, -2.79241)
+transform = Transform3D(-0.993091, 0, 0.117347, 0, 1, 0, -0.117347, 0, -0.993091, 0.143132, 0.791111, -3.3845)
 
 [node name="Veins5" parent="DitheringContainer/DitheringViewport/FadeOutContainer/SubViewport/SubViewportContainer" instance=ExtResource("7_ar4pq")]
-transform = Transform3D(0.906131, 0, 0.422998, 0, 1, 0, -0.422998, 0, 0.906131, -0.208171, 6.10384, -2.29297)
+transform = Transform3D(0.906131, 0, 0.422998, 0, 1, 0, -0.422998, 0, 0.906131, 1.11844, 0.737443, -3.32156)

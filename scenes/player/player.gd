@@ -9,6 +9,8 @@ const SENSITIVITY = 0.005
 @onready var interact_ray_cast: RayCast3D = $Head/Camera3D/InteractRayCast
 @onready var grab_node: Node3D = null 
 
+var holding: bool = false
+
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
@@ -28,13 +30,15 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 		
 	# Handle grab
-	if Input.is_action_pressed("grab"):
+	if Input.is_action_pressed("grab") and !holding:
 		var collider = interact_ray_cast.get_collider()
-		if collider is RigidBody3D:
+		if collider is vein_node and collider.is_grabbable:
 			grab_node = collider
+			holding = true
 	
-	if Input.is_action_just_released("grab"):
+	if Input.is_action_just_released("grab") and holding:
 		grab_node = null
+		holding = false
 			
 	if grab_node != null:
 		grab_node.global_position = camera.global_position

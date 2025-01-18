@@ -194,7 +194,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D3" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.33891, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3389, 0)
 bone_name = "Bone.002"
 bone_idx = 2
 
@@ -206,7 +206,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D4" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.48087, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.48086, 0)
 bone_name = "Bone.003"
 bone_idx = 3
 
@@ -218,7 +218,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D5" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.63989, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.63988, 0)
 bone_name = "Bone.004"
 bone_idx = 4
 
@@ -230,7 +230,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D6" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.78841, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.7884, 0)
 bone_name = "Bone.005"
 bone_idx = 5
 
@@ -242,7 +242,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D7" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.9435, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.94349, 0)
 bone_name = "Bone.006"
 bone_idx = 6
 
@@ -266,7 +266,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D9" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.27992, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.27991, 0)
 bone_name = "Bone.008"
 bone_idx = 8
 
@@ -314,7 +314,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.554152, 0)
 shape = SubResource("CapsuleShape3D_13fox")
 
 [node name="BoneAttachment3D13" type="BoneAttachment3D" parent="veinCopy/Armature/Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.9003, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.9002, 0)
 bone_name = "Bone.012"
 bone_idx = 12
 
